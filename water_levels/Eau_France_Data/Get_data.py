@@ -23,12 +23,12 @@ def get_eau_data(station_id):
 
         eau_df = pd.DataFrame(response_data)
 
+        cursor.close()
+        connection.close()
+
+
         return eau_df
 
     except psycopg2.DatabaseError as e:
         print(f"Postgres error: {e}")
 
-    finally:
-        if connection:
-            connection.close()
-        cursor.close()

@@ -11,7 +11,6 @@ from Utility import constants
 
 
 def get_water_levels(station_id):
-
     url = "https://hubeau.eaufrance.fr/api/v1/hydrometrie/observations_tr?code_entite={std_id}".format(
         std_id=station_id,
     )
@@ -75,10 +74,9 @@ def insert_data(station_id):
             cursor.execute(insert_query, data)
 
             connection.commit()
+
+            cursor.close()
+            connection.close()
+
     except psycopg2.DatabaseError as e:
         print(f"Progres error: {e}")
-
-    finally:
-        if connection:
-            connection.close()
-        cursor.close()
