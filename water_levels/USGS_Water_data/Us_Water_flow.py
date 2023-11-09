@@ -1,3 +1,9 @@
+# -*- UTF-8 -*-
+"""
+Script created for the Iceye assessment.
+@author: Yonatan Shahar
+"""
+
 import dataretrieval.nwis as nwis
 import psycopg2
 from sqlalchemy import create_engine
@@ -12,6 +18,13 @@ endDate = "2023-10-02"
 
 # Retrieve the data
 def get_usgs_data(site, start_date, end_date):
+    """
+    Get the data in the USGS water flow results.
+    :param site: site id
+    :param start_date:
+    :param end_date:
+    :return: a pandas dataframe
+    """
     conn_string = f"postgresql://{constants.user}:{constants.password}@{constants.host}:{constants.port}/{constants.database}"
 
     db = create_engine(conn_string)

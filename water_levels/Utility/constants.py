@@ -1,3 +1,9 @@
+# -*- UTF-8 -*-
+"""
+Script created for the Iceye assessment.
+@author: Yonatan Shahar
+"""
+
 database = "WaterLevel"
 host = "localhost"
 user = "postgres"
