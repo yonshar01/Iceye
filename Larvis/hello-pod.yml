@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: larvis-pod
+  labels:
+    app: larvis-pod
+spec:
+  containers:
+  - name: larvis
+    image: yonshar/larvis
+    ports:
+    - containerPort: 8080
