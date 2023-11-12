@@ -1,4 +1,12 @@
+# -*- UTF-8 -*-
+"""
+Script created for the Iceye assessment.
+@author: Yonatan Shahar 
+"""
+
+
 from flask import Flask
+
 
 app = Flask(__name__)
 
@@ -33,6 +41,7 @@ def describe():
                    "name: minikube"""
     )
     return description
+
 
 if __name__ == "__main__":
     app.run(debug=False, host="0.0.0.0", port="5000")
