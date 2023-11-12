@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: larvis-pod
-  labels:
-    app: larvis-pod
+  name: hello-pod
 spec:
   containers:
-  - name: larvis
-    image: yonshar/larvis
-    ports:
-    - containerPort: 8080
+  - image: yonshar/larvis:latest
+    name: hello-container
+
+
+

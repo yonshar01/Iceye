@@ -13,13 +13,3 @@ ADD /files/larvis /home/larvis/
 
 # working directory
 WORKDIR /home/larvis
-
-
-
-
-
-
-
-
-
-
