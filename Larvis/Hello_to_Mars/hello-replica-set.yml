@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: hello-replica-set
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-mars
+  template:
+    metadata:
+      labels:
+        app: hello-mars
+    spec:
+      containers:
+      - name: hello-container
+        image: yonshar/hello-mars
+        ports:
+        - containerPort: 5000
