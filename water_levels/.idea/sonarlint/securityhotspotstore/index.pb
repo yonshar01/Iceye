@@ -1,6 +1,4 @@
 
-Q
-!Eau_France_Data/GetWaterLevels.py,7\5\75b093415ce84e64527aed1bfb72cce320dacf5e
 P
  USGS_Water_data/Us_Water_flow.py,a\a\aa8be3733ed420618448f1e45f6197b69e68eaa7
 W
@@ -27,14 +25,10 @@ L
 Eau_France_Data/constants.py,e\5\e5858d02846333c848037e55d5b5cb999d537398
 M
 Eau_France_Data/response.json,4\4\44a6b145bb472c0c76ee5689e3e60b6e6d3ca15d
-[
-+Eau_France_Data/response_data/eau_json_file,3\6\368403fd32ed17f288cc2192b24a86e769f67c03
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 ^
 ..idea/inspectionProfiles/profiles_settings.xml,1\e\1e9075f5bf079c01ef2c910709e91a497d262080
-O
-Eau_France_Data/response_1.json,d\c\dccbaacbfc35b41bbbc5299d0d5ded0643ad08eb
 \
 ,Eau_France_Data/Get_EauFrance_WaterLevels.py,3\2\327eb0e6f2fdfaaba596c3a0edded6cb782a5231
 Å
